@@ -1,0 +1,185 @@
+@keyframes rotate {
+	from { transform: rotate(0deg); } 
+	to { transform: rotate(360deg); } 
+}
+@-moz-keyframes rotate { 
+	from { -moz-transform: rotate(0deg); } 
+	to { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes rotate { 
+	from { -webkit-transform: rotate(0deg); } 
+	to { -webkit-transform: rotate(360deg); } 
+}
+
+@-keyframes rotate2 { 
+	from { transform: rotate(360deg); } 
+	to { transform: rotate(0deg); } 
+}
+@-moz-keyframes rotate2 { 
+	from { -moz-transform: rotate(360deg); } 
+	to { -moz-transform: rotate(0deg); } 
+}
+@-webkit-keyframes rotate2 { 
+	from { -webkit-transform: rotate(360deg); } 
+	to { -webkit-transform: rotate(0deg); } 
+}
+
+.Spinner { display:inline-block; width:100px; height:100px; position:relative; font-family:serif; }
+.Spinner .inner { position:absolute; left:50%; top:50%; width:100px; height:100px; margin:-50px; line-height:100px; vertical-align:middle; text-align:center; color:rgba(200, 200, 200,.7); }
+
+.Spinner .inner:after {
+	animation: rotate 2s linear infinite;
+	-webkit-animation: rotate 2s linear infinite;
+	-moz-animation: rotate 2s linear infinite;
+}
+
+.Spinner .inner:before {
+	animation: rotate2 2s linear infinite;
+	-webkit-animation: rotate2 2s linear infinite;
+	-moz-animation: rotate2 2s linear infinite;
+}
+
+#Spinner .inner,
+#Spinner2 .inner,
+#Spinner3 .inner,
+#Spinner6 .inner,
+#Spinner7 .inner,
+#Spinner8 .inner,
+#Spinner9 .inner,
+#Spinner10 .inner,
+#Spinner11 .inner
+{ color:rgba(0,0,0,1); }
+
+#Spinner .inner:after { content:"✵"; font-size:50px; width:100%; height:100%; line-height: 206.6%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; }
+
+#Spinner .inner:before { content:"❂"; font-size: 100px; width:100%; height:100%; line-height: 105.5%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; }
+
+#Spinner2 .inner:after { content:"✿"; font-size: 70px; width:100%; height:100%; line-height: 144.8%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; }
+
+#Spinner2 .inner:before { content:"❂"; font-size: 100px; width:100%; height:100%; line-height: 105.5%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; }
+
+#Spinner3 .inner:before { content:"↺"; font-size: 50px; width:100%; height:100%; line-height: 208.6%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; 
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate2 1s linear infinite;
+	-moz-animation: rotate2 1s linear infinite;
+}
+
+#Spinner3 .inner:after { content:"↻"; font-size: 100px; width:100%; height:100%; line-height: 107.9%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate 1s linear infinite;
+	-moz-animation: rotate 1s linear infinite;
+}
+
+#Spinner4 .inner { color:rgba(0,0,0,.4); }
+
+#Spinner4 .inner:after { content:"◒"; font-size: 70px; width:100%; height:100%; line-height: 154%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;  }
+
+#Spinner4 .inner:before { content:"◒"; font-size: 70px; width:100%; height:100%; line-height: 154%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; }
+
+#Spinner5 .inner:after { content:"✵"; font-size:50px; width:100%; height:100%; line-height: 206.6%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; color: rgb(34, 117, 56);}
+
+#Spinner5 .inner:before { content:"❂"; font-size: 100px; width:100%; height:100%; line-height: 105.5%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; color: rgba(93, 180, 116, 0.58);}
+
+#Spinner5 .inner { -webkit-transform: perspective( 100px ) rotateX( -35deg ); }
+
+#Spinner6 .inner:before { content:"↺"; font-size: 70px; width:100%; height:100%; line-height: 151.8%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate2 1s linear infinite;
+	-moz-animation: rotate2 1s linear infinite;
+}
+
+#Spinner6 .inner:after { content:"↻"; font-size: 100px; width:100%; height:100%; line-height: 108.5%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate 1s linear infinite;
+	-moz-animation: rotate 1s linear infinite;
+}
+
+#Spinner6 .inner { -webkit-transform: perspective( 100px ) rotateX( 55deg ); }
+
+#Spinner7 .inner:before { content:"↺"; font-size: 50px; width:100%; height:100%; line-height: 208.6%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; 
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate2 1s linear infinite;
+	-moz-animation: rotate2 1s linear infinite;
+}
+
+#Spinner7 .inner:after { content:"↻"; font-size: 100px; width:100%; height:100%; line-height: 107.9%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; 
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate 1s linear infinite;
+	-moz-animation: rotate 1s linear infinite;
+}
+#Spinner7 .inner { -webkit-transform: perspective( 100px ) rotateX( 55deg ); }
+
+#Spinner8 .inner:before { content:"↺"; font-size: 50px; width:100%; height:100%; line-height: 208.6%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; 
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate2 1s linear infinite;
+	-moz-animation: rotate2 1s linear infinite;
+}
+
+#Spinner8 .inner:after { content:"↻"; font-size: 100px; width:100%; height:100%; line-height: 107.9%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; 
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate 1s linear infinite;
+	-moz-animation: rotate 1s linear infinite;
+}
+#Spinner8 .inner { -webkit-transform: perspective( 100px ) rotateX( 55deg ); }
+.Spinner .loading { text-align:center; font-family:arial;  padding-top: 45px; font-size: 9px; letter-spacing:3px; }
+
+/* [[ Spinner9 */
+
+#Spinner9 > .inner:before { content:"↺"; font-size: 70px; width:100%; height:100%; line-height: 151.8%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate2 1s linear infinite;
+	-webkit-animation: rotate2 1s linear infinite;
+	-moz-animation: rotate2 1s linear infinite;
+}
+
+#Spinner9 > .inner .inner:before { content:"↻"; font-size: 40px; width:100%; height:100%; line-height: 103px; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate .5s linear infinite;
+	-webkit-animation: rotate .5s linear infinite;
+	-moz-animation: rotate .5s linear infinite;
+}
+
+#Spinner9 > .inner .inner:after { content:"↻"; font-size: 20px; width:100%; height:100%; line-height: 102px; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate2 .3s linear infinite;
+	-webkit-animation: rotate2 .3s linear infinite;
+	-moz-animation: rotate2 .3s linear infinite;
+}
+
+#Spinner9 > .inner:after { content:"↻"; font-size: 100px; width:100%; height:100%; line-height: 108.5%; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate2 1.5s linear infinite;
+	-webkit-animation: rotate 1.5s linear infinite;
+	-moz-animation: rotate 1.5s linear infinite;
+}
+
+/* Spinner9 ]] */
+
+/* [[ Spinner10 */
+
+#Spinner10 > .inner:before { content:"↻"; font-size: 20px; width:100%; height:100%; line-height: 101.9px; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate .3s linear infinite;
+	-webkit-animation: rotate .3s linear infinite;
+	-moz-animation: rotate .3s linear infinite;
+}
+
+#Spinner10 > .inner:after { content:"↻"; font-size: 100px; width:100%; height:100%; line-height: 107.1px; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center;
+	animation: rotate 1s linear infinite;
+	-webkit-animation: rotate 1s linear infinite;
+	-moz-animation: rotate 1s linear infinite;
+}
+
+/* Spinner10 ]] */
+
+/* [[ Spinner11 */
+
+#Spinner11 > .inner:before { content:"☀"; font-size: 100px; width:100%; height:100%; line-height: 111.1px; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; animation: rotate 9s linear infinite; -webkit-animation: rotate 9s linear infinite; -moz-animation: rotate 9s linear infinite; }
+
+#Spinner11 > .inner:after { content:"↻"; font-size: 36px; width:100%; height:100%; line-height: 103.1px; position:absolute; left:50%; top:50%; margin:-50px; text-indent: 0; text-align: center; animation: rotate 1s linear infinite; -webkit-animation: rotate 1s linear infinite; -moz-animation: rotate 1s linear infinite; color:white; }
+
+/* Spinner10 ]] */
+
+
+@-moz-document url-prefix() {
+	#Spinner:before {
+	}
+}
+
+
+
